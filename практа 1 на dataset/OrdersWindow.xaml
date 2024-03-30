@@ -1,0 +1,21 @@
+﻿<Window x:Class="практа_1_на_dataset.OrdersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OrdersWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center">
+            <Button Content="Клиенты" Click="ClientsButton_Click" Margin="5" />
+            <Button Content="Продукты" Click="ProductsButton_Click" Margin="5" />
+            <Button Content="Заказы" Click="OrdersButton_Click" Margin="5" />
+            <Button Content="Получатели заказов" Click="OrderRecipientsButton_Click" Margin="5" />
+            <Button Content="Доставка" Click="DeliveryButton_Click" Margin="5" />
+        </StackPanel>
+
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" />
+    </Grid>
+</Window>
